@@ -3,7 +3,8 @@
   --color-surface: #ffffff;
   --color-ink: #1c1c1c;
   --color-muted: #5a5a5a;
-  --color-accent: #2e6bff;
+  --color-accent: #75227d;
+  --color-accent-alt: #ff5f37;
   --color-border: #e6e3dc;
   --radius: 10px;
   --max-width: 720px;
@@ -29,12 +30,13 @@ a {
 }
 
 a:hover {
+  color: var(--color-accent-alt);
   text-decoration: underline;
 }
 
 .hero {
   padding: 4rem 1.5rem 3rem;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 2px solid var(--color-accent);
 }
 
 .hero__inner {
@@ -51,9 +53,10 @@ a:hover {
 }
 
 .hero__name {
-  font-size: 2.75rem;
+  font-size: 3.25rem;
   margin: 0 0 1rem;
   line-height: 1.1;
+  color: var(--color-accent);
 }
 
 .hero__tagline {
@@ -77,8 +80,8 @@ a:hover {
 .section--alt {
   background: var(--color-surface);
   max-width: none;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
+  border-top: 2px solid var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
 }
 
 .section--alt > * {
@@ -88,8 +91,9 @@ a:hover {
 }
 
 .section h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin: 0 0 1rem;
+  color: var(--color-accent);
 }
 
 .projects {
@@ -100,7 +104,7 @@ a:hover {
 
 .project {
   background: var(--color-bg);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-accent-alt);
   border-radius: var(--radius);
   padding: 1.25rem 1.5rem;
 }
